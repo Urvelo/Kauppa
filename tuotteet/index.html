@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kauppa – Tuotteet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="../">Kauppa</a>
+        <nav id="main-nav" class="nav-links" aria-label="Päänavigaatio">
+          <a href="./">Tuotteet</a>
+          <a href="../#kategoriat">Kategoriat</a>
+          <a href="../#edut">Edut</a>
+        </nav>
+        <div class="nav-actions">
+          <button id="menu-toggle" class="icon-btn" aria-label="Avaa valikko">☰</button>
+          <button id="cart-btn" class="cart-btn" aria-label="Ostoskori">
+            🛒 <span id="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <h1>Kaikki tuotteet</h1>
+            <a class="link" href="../">Takaisin etusivulle</a>
+          </div>
+          <p class="lead">
+            Tuotelista omalla URL-polulla. Tämä sivu avautuu osoitteessa
+            <strong>/tuotteet/</strong> ilman .html-päätettä.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="products">
+            <article class="product-card">
+              <div class="product-image" aria-hidden="true">⌚</div>
+              <h3>Smart Watch X</h3>
+              <p class="price">129 €</p>
+              <button class="btn btn-primary add-to-cart">Lisää koriin</button>
+            </article>
+            <article class="product-card">
+              <div class="product-image" aria-hidden="true">🎧</div>
+              <h3>Wireless Headphones</h3>
+              <p class="price">89 €</p>
+              <button class="btn btn-primary add-to-cart">Lisää koriin</button>
+            </article>
+            <article class="product-card">
+              <div class="product-image" aria-hidden="true">⌨️</div>
+              <h3>Mechanical Keyboard</h3>
+              <p class="price">99 €</p>
+              <button class="btn btn-primary add-to-cart">Lisää koriin</button>
+            </article>
+            <article class="product-card">
+              <div class="product-image" aria-hidden="true">📷</div>
+              <h3>Action Camera Mini</h3>
+              <p class="price">159 €</p>
+              <button class="btn btn-primary add-to-cart">Lisää koriin</button>
+            </article>
+            <article class="product-card">
+              <div class="product-image" aria-hidden="true">🎮</div>
+              <h3>Game Controller Pro</h3>
+              <p class="price">69 €</p>
+              <button class="btn btn-primary add-to-cart">Lisää koriin</button>
+            </article>
+            <article class="product-card">
+              <div class="product-image" aria-hidden="true">🔊</div>
+              <h3>Bluetooth Speaker Mini</h3>
+              <p class="price">49 €</p>
+              <button class="btn btn-primary add-to-cart">Lisää koriin</button>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Kauppa — Dropshipping-pohjan tuotesivu.</p>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
