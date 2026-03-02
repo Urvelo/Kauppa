@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kauppa – Etusivu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="#">Kauppa</a>
+        <nav id="main-nav" class="nav-links" aria-label="Päänavigaatio">
+          <a href="#tuotteet">Tuotteet</a>
+          <a href="#kategoriat">Kategoriat</a>
+          <a href="#edut">Edut</a>
+        </nav>
+        <div class="nav-actions">
+          <button id="menu-toggle" class="icon-btn" aria-label="Avaa valikko">☰</button>
+          <button id="cart-btn" class="cart-btn" aria-label="Ostoskori">
+            🛒 <span id="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="badge">Uutuudet 2026</p>
+            <h1>Moderni verkkokauppa, yksinkertaisena.</h1>
+            <p class="lead">
+              Tämä on kevyt pohja, jossa on modernin verkkokaupan tärkeimmät osat:
+              hero, kategoriat, tuotekortit ja selkeä call-to-action.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#tuotteet">Selaa tuotteita</a>
+              <a class="btn btn-ghost" href="#kategoriat">Katso kategoriat</a>
+            </div>
+          </div>
+          <aside class="hero-card" aria-label="Nopea info">
+            <h2>Nopea toimitus</h2>
+            <p>Tilaukset lähtevät saman päivän aikana ennen klo 14.</p>
+            <ul>
+              <li>Ilmainen toimitus yli 80 €</li>
+              <li>14 päivän palautusoikeus</li>
+              <li>Turvallinen maksu</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="kategoriat" class="section">
+        <div class="container">
+          <h2>Kategoriat</h2>
+          <div class="categories">
+            <article class="tile">Elektroniikka</article>
+            <article class="tile">Koti</article>
+            <article class="tile">Pukeutuminen</article>
+            <article class="tile">Lisävarusteet</article>
+          </div>
+        </div>
+      </section>
+
+      <section id="tuotteet" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>Suositut tuotteet</h2>
+            <a class="link" href="#">Näytä kaikki</a>
+          </div>
+          <div class="products">
+            <article class="product-card">
+              <div class="product-image" aria-hidden="true">⌚</div>
+              <h3>Smart Watch X</h3>
+              <p class="price">129 €</p>
+              <button class="btn btn-primary add-to-cart">Lisää koriin</button>
+            </article>
+            <article class="product-card">
+              <div class="product-image" aria-hidden="true">🎧</div>
+              <h3>Wireless Headphones</h3>
+              <p class="price">89 €</p>
+              <button class="btn btn-primary add-to-cart">Lisää koriin</button>
+            </article>
+            <article class="product-card">
+              <div class="product-image" aria-hidden="true">⌨️</div>
+              <h3>Mechanical Keyboard</h3>
+              <p class="price">99 €</p>
+              <button class="btn btn-primary add-to-cart">Lisää koriin</button>
+            </article>
+            <article class="product-card">
+              <div class="product-image" aria-hidden="true">📷</div>
+              <h3>Action Camera Mini</h3>
+              <p class="price">159 €</p>
+              <button class="btn btn-primary add-to-cart">Lisää koriin</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="edut" class="section">
+        <div class="container benefits">
+          <article>
+            <h3>Turvallinen maksaminen</h3>
+            <p>Useita maksutapoja ja suojattu kassaprosessi.</p>
+          </article>
+          <article>
+            <h3>Nopea tuki</h3>
+            <p>Autamme chatissa ja sähköpostilla arkisin.</p>
+          </article>
+          <article>
+            <h3>Helppo palautus</h3>
+            <p>Palautus onnistuu selkeällä lomakkeella.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Kauppa — Kevyt demo jatkokehitystä varten.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
